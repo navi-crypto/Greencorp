@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GreenCorp Landing</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <img class="header__logo" src="img/logo_1.svg" alt="logo">
+    <div class="header__div">
+      <a href="#">Контакты</a>
+      <button class="header__button-book">Заказать</button>
+    </div>
+  </header>
+  <section class="preview">
+    <div>
+      <h1 class="preview__heading">
+        Солнечные панели от GreenCorp
+      </h1>
+      <p class="preview__text">
+       Производите дешёвую экологически чистую электроэнергию <br> из солнечного света
+     </p>
+     <button class="preview__button-details">
+       Узнать подробнее >
+     </button>
+    </div>
+    <div>
+      <img class="preview__img-panel" src="img/solar-panel_1.png" alt="panel">
+    </div>
+  </section>
+  <section class="form">
+    <div class="form__container">
+      <h1 class="form__heading">
+        Оставьте свои контакты
+      </h1>
+      <p class="form__text">
+        Поможем подобрать модель. <br> Выбрать удобный вариант доставки и установки. <br> Гарантия возврата денег
+      </p>
+    </div>
+    <form>
+      <div>
+        <label for="name">Ваше имя</label>
+        <input placeholder="Введите имя" id="name" type="text">
+      </div>
+      <div>
+        <label for="email">Электронный адрес</label>
+        <input placeholder="***@yandex.ru" id="email" type="email">
+      </div>
+      <div>
+        <label for="phone_number">Номер телефона</label>
+        <input placeholder="7 (999) 999-99-99" id="phone_number" type="phone">
+      </div>
+      <div>
+        <label for="budget">Примерный бюджет</label>
+        <select id="budget">
+          <option value="minimum">10000р-30000р</option>
+          <option value="medium">30000р-60000р</option>
+          <option value="maximum">60000р-100000р</option>
+          <option value="other">Другое</option>
+        </select>
+        
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>

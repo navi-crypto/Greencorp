@@ -1,0 +1,250 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0px 0px 0px 0px;
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.header__logo {
+  height: 30px;
+}
+.preview__img-panel {
+  max-width: 550px;
+}
+.preview__img-sun {
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  animation: rotation 6s linear infinite;
+}
+@keyframes rotation {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preview {
+  padding: 100px 0px 115px 0px;;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: url("img/background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.preview__div {
+  max-width: 550px;
+}
+.preview__container-img {
+  position: relative;
+}
+.preview__heading {
+  font-size: 70px;
+  color: #213053;
+  padding-bottom: 30px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.preview__text {
+  font-size: 18px;
+  color: #213053;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+button {
+  padding: 15px;
+  border-radius: 18px;
+  background-color: #23a030;
+  border-width: 0px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.2s ease-in;
+}
+a {
+  text-decoration: none;
+  color: #213053;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+.header__button-book {
+  font-size: 15px;
+  margin-left: 20px;
+  box-shadow: 0 16px 36px rgba(52 213 68 / 22%);
+}
+.preview__button-details {
+  font-size: 18px;
+  box-shadow: 0 16px 36px rgba(52 213 68 / 22%);
+}
+button:hover {
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(256 152 12 / 20%);
+}
+.form {
+  background-color: #1d263a;
+  padding: 115px 0px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.form__heading {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 40px 0px;
+  text-align: center;
+}
+.form__text {
+  font-size: 18px;
+  opacity: 0.65;
+  text-align: center;
+  margin: 60px 0px;
+}
+form {
+  display: grid;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 0px 20px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #215053;
+}
+label {
+  margin-bottom: 13px;
+}
+.form__select {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  padding: 0px 20px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #215053;
+  appearance: none;
+}
+.form__button-send {
+  margin-top: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 60px;
+  box-shadow: 0 16px 36px rgba(52 213 68 / 22%);
+}
+.form__container_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+}
+.proof {
+  padding: 115px 60px;
+}
+
+.proof__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.proof__card {
+  padding: 35px 40px 25px 40px;
+  border: #d9e4e6;
+  border-style: solid;
+  border-width: 1px;
+}
+.proof__i {
+  height: 100px;
+  width: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: rgb(231, 231, 231);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solar-panel{
+  color: #ffb406;
+}
+.fa-24-7 {
+  color: #ad1714;
+}
+.fa-chart-line {
+  color: #22a030;
+}
+h3 {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+  margin: 16px 0px;
+}
+.proof__card-text {
+  font-size: 16px;
+  color: #213053;
+}
+.proof__divider {
+  height: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e6eaf4;
+  margin: 50px 0px;
+}
+.proof__bottom {
+  display: flex;
+}
+h2 {
+  color: #213053;
+  font-size: 48px;
+}
+.proof__bottom-texttr {
+  color: #213053;
+  margin: 18px 0px;
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 70%;
+}
+.proof__bottom-dives{
+  border-radius: 25px;
+  box-shadow: 0 6px 0 rgba(221 95 38/20%);
+  padding: 35px 40px 25px 40px;
+  color: white;
+}
+h4 {
+  margin: 48px 0px;
+  font-size: 48px;
+  color: white;
+  padding: 0px 0px 20px 0px;
+}
+.proof__bottom-savings {
+  background-color: #dc5e26;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.proof__bottom-rating {
+  background-color: #1d263a;
+}
+.proof__i-stars {
+  color: #dc5e26;
+}
