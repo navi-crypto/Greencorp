@@ -248,3 +248,9 @@ h4 {
 .proof__i-stars {
   color: #dc5e26;
 }
+@media (max-width: 720px) {
+  .preview {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
